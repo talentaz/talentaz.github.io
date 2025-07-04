@@ -1,979 +1,1348 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>SakuraMotors</title>
-        <link rel="icon" type="image/x-icon" href="assets/logo.svg" />
-        <link rel="stylesheet" href="css/style.css" />
-        <link rel="stylesheet" href="css/header.css" />
-        <link rel="stylesheet" href="css/footer.css" />
-        <!-- link offline font fontawesome pro -->
-        <link rel="stylesheet" href="icon/css/all.min.css" />
-        <link rel="stylesheet" href="icon/css/sharp-solid.min.css" />
-        <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
-    </head>
-    <body>
-        <header>
-            <div class="navbar">
-                <div class="header-container">
-                    <a href="index.html" class="logo">
-                        <img src="assets/logo.svg" alt="Sakura Motors" />
-                    </a>
-                    <div class="nav-main">
-                        <div class="desktop-contact">
-                            <a href="https://wa.me/81298683668" target="_blank">
-                                <i class="fa-regular c-t-a fa-phone"></i>
-                                <span>+81-29-868-3668</span>
-                            </a>
-                        </div>
-                        <nav class="nav-links">
-                            <ul>
-                                <li><a href="index.html" class="active">Home</a></li>
-                                <li><a href="stock.html">Stock</a></li>
-                                <li class="dropdown">
-                                    <a href="#">About Us <i class="fas fa-chevron-down"></i></a>
-                                    <ul class="dropdown-menu">
-                                        <li><a href="#">About Company</a></li>
-                                        <li><a href="#">Gallery</a></li>
-                                        <li><a href="#">Payment</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="#">News</a></li>
-                                <li><a href="#">Contact Us</a></li>
-                                <li class="dropdown">
-                                    <a href="#">Whatsapp <i class="fas fa-chevron-down"></i></a>
-                                    <ul class="dropdown-menu">
-                                        <li><a href="https://wa.me/818068823553" target="_blank">Japan: +81-80-6882-3553</a></li>
-                                        <li><a href="https://wa.me/255716787502" target="_blank">Tanzania: +255-716-787-502</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </nav>
-                    </div>
-
-                    <div class="auth-buttons auth-buttons-desk">
-                        <a href="#" class="login">Log in</a>
-                        <a href="#" class="signup">Sign up</a>
-                    </div>
-                    <div class="support-main">
-                        <div class="support-btn">
-                            <i class="fa-regular fa-phone"></i>
-                            <i class="fa-brands fa-whatsapp"></i>
-                            <i class="fa-regular fa-user"></i>
-                        </div>
-                        <div class="hamburger" onclick="toggleMenu()">
-                            <i class="fa-regular fa-bars"></i>
-                        </div>
-                    </div>
-                </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SakuraMotors</title>
+    <link rel="icon" type="image/x-icon" href="assets/logo.svg" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <!-- link offline font fontawesome pro -->
+    <link rel="stylesheet" href="icon/css/all.min.css" />
+    <link rel="stylesheet" href="icon/css/sharp-solid.min.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="navbar">
+        <div class="header-container">
+          <a href="index.html" class="logo">
+            <img src="assets/logo.svg" alt="Sakura Motors" />
+          </a>
+          <div class="nav-main">
+            <div class="desktop-contact">
+              <a href="https://wa.me/81298683668" target="_blank">
+                <i class="fa-regular c-t-a fa-phone"></i>
+                <span>+81-29-868-3668</span>
+              </a>
             </div>
-            <div class="mobile-menu" id="mobileMenu">
-                <div class="top-row">
-                    <div class="logo">
-                        <img src="assets/logo.svg" alt="Sakura Motors" />
-                    </div>
-                    <div class="support-main">
-                        <div class="support-btn">
-                            <i class="fa-regular fa-phone"></i>
-                            <i class="fa-brands fa-whatsapp"></i>
-                            <i class="fa-regular fa-user"></i>
-                        </div>
-                        <div class="icons">
-                            <i class="fa-regular fa-xmark-large" onclick="toggleMenu()"></i>
-                        </div>
-                    </div>
-                </div>
-                <div class="mbl-bottom">
-                    <ul>
-                        <li><a href="index.html" class="active">Home</a></li>
-                        <li><a href="stock.html">Stock</a></li>
-                        <li><a href="#">Company Profile</a></li>
-                        <li><a href="#">Gallery</a></li>
-                        <li><a href="#">Payment</a></li>
-                        <li><a href="#">News</a></li>
-                        <li><a href="#">Contact Us</a></li>
-                    </ul>
-                    <div class="cont-info">
-                        <h1><i class="fa-brands fa-whatsapp"></i> Whatsapp:</h1>
-                        <p>
-                            Japan: <a href="https://wa.me/818068823553" target="_blank"><strong>+81-80-6882-3553</strong></a>
-                        </p>
-                        <p>
-                            Tanzania: <a href="https://wa.me/255716787502" target="_blank"><strong>+255-716-787-502</strong></a>
-                        </p>
-                    </div>
+            <nav class="nav-links">
+              <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="stock.html">Stock</a></li>
+                <li class="dropdown">
+                  <a href="#">About Us <i class="fas fa-chevron-down"></i></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">About Company</a></li>
+                    <li><a href="#">Gallery</a></li>
+                    <li><a href="#">Payment</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li class="dropdown">
+                  <a href="#">Whatsapp <i class="fas fa-chevron-down"></i></a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a href="https://wa.me/818068823553" target="_blank"
+                        >Japan: +81-80-6882-3553</a
+                      >
+                    </li>
+                    <li>
+                      <a href="https://wa.me/255716787502" target="_blank"
+                        >Tanzania: +255-716-787-502</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </nav>
+          </div>
 
-                    <div class="auth-buttons">
-                        <a href="#" class="login">Log in</a>
-                        <a href="#" class="signup">Sign up</a>
-                    </div>
-                </div>
+          <div class="auth-buttons auth-buttons-desk">
+            <a href="#" class="login">Log in</a>
+            <a href="#" class="signup">Sign up</a>
+          </div>
+          <div class="support-main">
+            <div class="support-btn">
+              <i class="fa-regular fa-phone"></i>
+              <i class="fa-brands fa-whatsapp"></i>
+              <i class="fa-regular fa-user"></i>
             </div>
-        </header>
-        <section>
-            <div class="main-hero">
-                <div class="container">
-                    <div class="m-head">
-                        <h1>
-                            <span class="word">Your</span>
-                            <span class="word">Satisfaction</span>
-                            <span class="word last">is Our Reward!</span>
-                        </h1>
-
-                        <img src="assets/hero-banner.svg" alt="hero" />
-                    </div>
-                </div>
+            <div class="hamburger" onclick="toggleMenu()">
+              <i class="fa-regular fa-bars"></i>
             </div>
-            <div class="vs-search-box">
-                <h2>Search Vehicles</h2>
+          </div>
+        </div>
+      </div>
+      <div class="mobile-menu" id="mobileMenu">
+        <div class="top-row">
+          <div class="logo">
+            <img src="assets/logo.svg" alt="Sakura Motors" />
+          </div>
+          <div class="support-main">
+            <div class="support-btn">
+              <i class="fa-regular fa-phone"></i>
+              <i class="fa-brands fa-whatsapp"></i>
+              <i class="fa-regular fa-user"></i>
+            </div>
+            <div class="icons">
+              <i class="fa-regular fa-xmark-large" onclick="toggleMenu()"></i>
+            </div>
+          </div>
+        </div>
+        <div class="mbl-bottom">
+          <ul>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="stock.html">Stock</a></li>
+            <li><a href="#">Company Profile</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">Payment</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+          <div class="cont-info">
+            <h1><i class="fa-brands fa-whatsapp"></i> Whatsapp:</h1>
+            <p>
+              Japan:
+              <a href="https://wa.me/818068823553" target="_blank"
+                ><strong>+81-80-6882-3553</strong></a
+              >
+            </p>
+            <p>
+              Tanzania:
+              <a href="https://wa.me/255716787502" target="_blank"
+                ><strong>+255-716-787-502</strong></a
+              >
+            </p>
+          </div>
 
+          <div class="auth-buttons">
+            <a href="#" class="login">Log in</a>
+            <a href="#" class="signup">Sign up</a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section>
+      <div class="main-hero">
+        <div class="container">
+          <div class="m-head">
+            <h1>
+              <span class="word">Your</span>
+              <span class="word">Satisfaction</span>
+              <span class="word last">is Our Reward!</span>
+            </h1>
+
+            <img src="assets/hero-banner.svg" alt="hero" />
+          </div>
+        </div>
+      </div>
+      <div class="vs-search-box">
+        <h2>Search Vehicles</h2>
+
+        <div>
+          <form class="vs-search-controls">
+            <div class="vs-search">
+              <h3>By keywords</h3>
+              <div class="vs-search-input">
+                <i class="fa-light fa-magnifying-glass"></i>
+                <input type="text" placeholder="Keywords" />
+              </div>
+            </div>
+            <div class="vs-filter">
+              <h3>By filters</h3>
+              <div class="vs-filter-input">
+                <!-- Make -->
+                <div class="vs-select-wrapper">
+                  <select id="makeSelect" class="vs-select">
+                    <option value="">Make</option>
+                    <option value="Toyota">Toyota</option>
+                    <option value="Nissan">Nissan</option>
+                    <option value="Mitsubishi">Mitsubishi</option>
+                  </select>
+                  <i class="fas fa-chevron-down vs-chevron"></i>
+                </div>
+
+                <!-- Model -->
+                <div class="vs-select-wrapper">
+                  <select id="modelSelect" class="vs-select">
+                    <option value="">Model</option>
+                    <option value="AZR60">AZR60</option>
+                    <option value="G114">G114</option>
+                    <option value="X123">X123</option>
+                    <option value="K9">K9</option>
+                  </select>
+                  <i class="fas fa-chevron-down vs-chevron"></i>
+                </div>
+
+                <!-- Gear -->
+                <div class="vs-select-wrapper">
+                  <select id="gearSelect" class="vs-select">
+                    <option value="">Gear</option>
+                    <option value="Automatic">Automatic</option>
+                    <option value="Manual">Manual</option>
+                  </select>
+                  <i class="fas fa-chevron-down vs-chevron"></i>
+                </div>
+
+                <!-- Year Range -->
+                <div class="year-range">
+                  <div class="year-label">Year</div>
+                  <div class="year-select-wrapper">
+                    <div class="vs-select-wrapper vs-select-wrapper-min">
+                      <select id="yearMin" class="vs-select">
+                        <option value="">Min</option>
+                      </select>
+                      <i class="fas fa-chevron-down vs-chevron"></i>
+                    </div>
+                    <div class="vs-select-wrapper vs-select-wrapper-max">
+                      <select id="yearMax" class="vs-select">
+                        <option value="">Max</option>
+                      </select>
+                      <i class="fas fa-chevron-down vs-chevron"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <button class="vs-search-btn">
+              <i class="fa-regular fa-magnifying-glass"></i>Search
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <section class="search-main">
+      <div class="container search-by">
+        <div class="tab-button-group">
+          <button id="searchByTypeBtn" class="tab-button active">
+            Search By Type
+          </button>
+          <button id="searchByMakeBtn" class="tab-button">
+            Search By Make
+          </button>
+        </div>
+
+        <div
+          class="navigation"
+          style="position: relative; display: flex; align-items: center"
+        >
+          <div id="leftArrow" class="nav-arrow left hidden">
+            <i class="fa-regular fa-angle-left"></i>
+          </div>
+          <div id="gridContainer" class="grid-wrapper">
+            <!-- Vehicle Types -->
+            <div class="vehicle-types">
+              <a href="large-bus.html" class="grid-item">
+                <div class="grid-item-title">
+                  Large Bus (2)
+                  <span class="arrow-icon"
+                    ><i class="fa-regular fa-arrow-right"></i
+                  ></span>
+                </div>
+                <img
+                  src="assets/large-bus.svg"
+                  class="vehicle-type-image"
+                  alt="Large Bus"
+                />
+              </a>
+              <a href="mini-bus.html" class="grid-item">
+                <div class="grid-item-title">
+                  Mini Bus (2)
+                  <span class="arrow-icon"
+                    ><i class="fa-regular fa-arrow-right"></i
+                  ></span>
+                </div>
+                <img
+                  src="assets/mini-bus.svg"
+                  class="vehicle-type-image"
+                  alt="Mini Bus"
+                />
+              </a>
+              <a href="heavy-truck.html" class="grid-item">
+                <div class="grid-item-title">
+                  Heavy Truck (2)
+                  <span class="arrow-icon"
+                    ><i class="fa-regular fa-arrow-right"></i
+                  ></span>
+                </div>
+                <img
+                  src="assets/heavy-truck.svg"
+                  class="vehicle-type-image"
+                  alt="Heavy Truck"
+                />
+              </a>
+              <a href="light-truck.html" class="grid-item">
+                <div class="grid-item-title">
+                  Light Truck (2)
+                  <span class="arrow-icon"
+                    ><i class="fa-regular fa-arrow-right"></i
+                  ></span>
+                </div>
+                <img
+                  src="assets/light-truck.svg"
+                  class="vehicle-type-image"
+                  alt="Light Truck"
+                />
+              </a>
+              <a href="van.html" class="grid-item">
+                <div class="grid-item-title">
+                  Van (2)
+                  <span class="arrow-icon"
+                    ><i class="fa-regular fa-arrow-right"></i
+                  ></span>
+                </div>
+                <img
+                  src="assets/van.svg"
+                  class="vehicle-type-image"
+                  alt="Van"
+                />
+              </a>
+              <a href="mini-van.html" class="grid-item">
+                <div class="grid-item-title">
+                  Mini Van (2)
+                  <span class="arrow-icon"
+                    ><i class="fa-regular fa-arrow-right"></i
+                  ></span>
+                </div>
+                <img
+                  src="assets/mini-van.svg"
+                  class="vehicle-type-image"
+                  alt="Mini Van"
+                />
+              </a>
+              <a href="suv.html" class="grid-item">
+                <div class="grid-item-title">
+                  Suv (2)
+                  <span class="arrow-icon"
+                    ><i class="fa-regular fa-arrow-right"></i
+                  ></span>
+                </div>
+                <img
+                  src="assets/suv.svg"
+                  class="vehicle-type-image"
+                  alt="Suv"
+                />
+              </a>
+              <a href="sedan.html" class="grid-item">
+                <div class="grid-item-title">
+                  Sedan (2)
+                  <span class="arrow-icon"
+                    ><i class="fa-regular fa-arrow-right"></i
+                  ></span>
+                </div>
+                <img
+                  src="assets/sedan.svg"
+                  class="vehicle-type-image"
+                  alt="Sedan"
+                />
+              </a>
+              <a href="wagon.html" class="grid-item">
+                <div class="grid-item-title">
+                  Wagon (2)
+                  <span class="arrow-icon"
+                    ><i class="fa-regular fa-arrow-right"></i
+                  ></span>
+                </div>
+                <img
+                  src="assets/wagon.svg"
+                  class="vehicle-type-image"
+                  alt="Wagon"
+                />
+              </a>
+              <a href="hatchback.html" class="grid-item">
+                <div class="grid-item-title">
+                  Hatchback (2)
+                  <span class="arrow-icon"
+                    ><i class="fa-regular fa-arrow-right"></i
+                  ></span>
+                </div>
+                <img
+                  src="assets/hatchback.svg"
+                  class="vehicle-type-image"
+                  alt="Hatchback"
+                />
+              </a>
+              <a href="pick-up.html" class="grid-item">
+                <div class="grid-item-title">
+                  Pick Up (2)
+                  <span class="arrow-icon"
+                    ><i class="fa-regular fa-arrow-right"></i
+                  ></span>
+                </div>
+                <img
+                  src="assets/pick-up.svg"
+                  class="vehicle-type-image"
+                  alt="Pick Up"
+                />
+              </a>
+              <a href="machinery.html" class="grid-item">
+                <div class="grid-item-title">
+                  Machinery (2)
+                  <span class="arrow-icon"
+                    ><i class="fa-regular fa-arrow-right"></i
+                  ></span>
+                </div>
+                <img
+                  src="assets/machinery.svg"
+                  class="vehicle-type-image"
+                  alt="Machinery"
+                />
+              </a>
+              <a href="large-bus-alt.html" class="grid-item">
+                <div class="grid-item-title">
+                  Large bus (2)
+                  <span class="arrow-icon"
+                    ><i class="fa-regular fa-arrow-right"></i
+                  ></span>
+                </div>
+                <img
+                  src="assets/mini-bus.svg"
+                  class="vehicle-type-image"
+                  alt="Large bus"
+                />
+              </a>
+            </div>
+
+            <!-- Vehicle Makes -->
+            <div class="vehicle-makes">
+              <a href="tayota.html" class="grid-item">
+                <div class="grid-item-title">
+                  Tayota (9)
+                  <span class="arrow-icon"
+                    ><i class="fa-regular fa-arrow-right"></i
+                  ></span>
+                </div>
+                <img
+                  src="assets/tayota.svg"
+                  class="vehicle-make-image"
+                  alt="Tayota"
+                />
+              </a>
+              <a href="mitsubishi.html" class="grid-item">
+                <div class="grid-item-title">
+                  Mitsubishi (2)
+                  <span class="arrow-icon"
+                    ><i class="fa-regular fa-arrow-right"></i
+                  ></span>
+                </div>
+                <img
+                  src="assets/mitsubishi.svg"
+                  class="vehicle-make-image"
+                  alt="Mitsubishi"
+                />
+              </a>
+              <a href="nissan.html" class="grid-item">
+                <div class="grid-item-title">
+                  Nissan (2)
+                  <span class="arrow-icon"
+                    ><i class="fa-regular fa-arrow-right"></i
+                  ></span>
+                </div>
+                <img
+                  src="assets/nissan.svg"
+                  class="vehicle-make-image"
+                  alt="Nissan"
+                />
+              </a>
+              <a href="isuzu.html" class="grid-item">
+                <div class="grid-item-title">
+                  Isuzu (2)
+                  <span class="arrow-icon"
+                    ><i class="fa-regular fa-arrow-right"></i
+                  ></span>
+                </div>
+                <img
+                  src="assets/isuzu.svg"
+                  class="vehicle-make-image"
+                  alt="Isuzu"
+                />
+              </a>
+              <a href="hino.html" class="grid-item">
+                <div class="grid-item-title">
+                  Hino (2)
+                  <span class="arrow-icon"
+                    ><i class="fa-regular fa-arrow-right"></i
+                  ></span>
+                </div>
+                <img
+                  src="assets/hino.svg"
+                  class="vehicle-make-image"
+                  alt="Hino"
+                />
+              </a>
+              <a href="suzuki.html" class="grid-item">
+                <div class="grid-item-title">
+                  Suzuki (2)
+                  <span class="arrow-icon"
+                    ><i class="fa-regular fa-arrow-right"></i
+                  ></span>
+                </div>
+                <img
+                  src="assets/suzuki.svg"
+                  class="vehicle-make-image"
+                  alt="Suzuki"
+                />
+              </a>
+              <a href="mercedes-benz.html" class="grid-item">
+                <div class="grid-item-title">
+                  Mercedes - Benz (2)
+                  <span class="arrow-icon"
+                    ><i class="fa-regular fa-arrow-right"></i
+                  ></span>
+                </div>
+                <img
+                  src="assets/benz.svg"
+                  class="vehicle-make-image"
+                  alt="Mercedes - Benz"
+                />
+              </a>
+              <a href="volvo.html" class="grid-item">
+                <div class="grid-item-title">
+                  Volvo (2)
+                  <span class="arrow-icon"
+                    ><i class="fa-regular fa-arrow-right"></i
+                  ></span>
+                </div>
+                <img
+                  src="assets/volvo.svg"
+                  class="vehicle-make-image"
+                  alt="Volvo"
+                />
+              </a>
+              <a href="bmw.html" class="grid-item">
+                <div class="grid-item-title">
+                  BMW (2)
+                  <span class="arrow-icon"
+                    ><i class="fa-regular fa-arrow-right"></i
+                  ></span>
+                </div>
+                <img
+                  src="assets/bmw.svg"
+                  class="vehicle-make-image"
+                  alt="BMW"
+                />
+              </a>
+              <a href="ford.html" class="grid-item">
+                <div class="grid-item-title">
+                  Ford (2)
+                  <span class="arrow-icon"
+                    ><i class="fa-regular fa-arrow-right"></i
+                  ></span>
+                </div>
+                <img
+                  src="assets/ford.svg"
+                  class="vehicle-make-image"
+                  alt="Ford"
+                />
+              </a>
+              <a href="honda.html" class="grid-item">
+                <div class="grid-item-title">
+                  Honda (2)
+                  <span class="arrow-icon"
+                    ><i class="fa-regular fa-arrow-right"></i
+                  ></span>
+                </div>
+                <img
+                  src="assets/honda.svg"
+                  class="vehicle-make-image"
+                  alt="Honda"
+                />
+              </a>
+              <a href="mazda.html" class="grid-item">
+                <div class="grid-item-title">
+                  Mazda (2)
+                  <span class="arrow-icon"
+                    ><i class="fa-regular fa-arrow-right"></i
+                  ></span>
+                </div>
+                <img
+                  src="assets/mazda.svg"
+                  class="vehicle-make-image"
+                  alt="Mazda"
+                />
+              </a>
+              <a href="tayota-alt.html" class="grid-item">
+                <div class="grid-item-title">
+                  Tayota (2)
+                  <span class="arrow-icon"
+                    ><i class="fa-regular fa-arrow-right"></i
+                  ></span>
+                </div>
+                <img
+                  src="assets/tayota.svg"
+                  class="vehicle-make-image"
+                  alt="Tayota"
+                />
+              </a>
+            </div>
+          </div>
+          <div id="rightArrow" class="nav-arrow right">
+            <i class="fa-regular fa-angle-right"></i>
+          </div>
+        </div>
+
+        <div id="paginationDots" class="pagination-dots"></div>
+      </div>
+    </section>
+    <section>
+      <div class="arrive-bg">
+        <div class="container">
+          <div class="heading-arrive">
+            <h2>New Arrivals</h2>
+            <a href="#" class="view-more">View More</a>
+          </div>
+
+          <div class="vehicle-grid">
+            <a href="#" class="vehicle-card">
+              <img
+                src="assets/card-img.jpg"
+                alt="Nissan Civilian"
+                class="vehicle-hero"
+              />
+              <div class="vehicle-info">
+                <h3>Nissan Civilian</h3>
+                <p>Stock no: <span>9067</span></p>
+                <div class="price">$7,879 <span>Price (FOB)</span></div>
+                <div class="specs">
+                  <div>
+                    <img src="assets/guage.svg" alt="Kilometer Icon" />
+                    <h4>490,000 km</h4>
+                  </div>
+                  <div>
+                    <img src="assets/manual.svg" alt="Manual Icon" />
+                    <h4>Manual</h4>
+                  </div>
+                </div>
+              </div>
+            </a>
+
+            <a href="#" class="vehicle-card">
+              <img
+                src="assets/card-img.jpg"
+                alt="Nissan Civilian"
+                class="vehicle-hero"
+              />
+              <div class="vehicle-info">
+                <h3>Nissan Civilian</h3>
+                <p>Stock no: <span>9067</span></p>
+                <div class="price">$7,879 <span>Price (FOB)</span></div>
+                <div class="specs">
+                  <div>
+                    <img src="assets/guage.svg" alt="Kilometer Icon" />
+                    <h4>490,000 km</h4>
+                  </div>
+                  <div>
+                    <img src="assets/manual.svg" alt="Manual Icon" />
+                    <h4>Manual</h4>
+                  </div>
+                </div>
+              </div>
+            </a>
+
+            <a href="#" class="vehicle-card">
+              <img
+                src="assets/card-img.jpg"
+                alt="Nissan Civilian"
+                class="vehicle-hero"
+              />
+              <div class="vehicle-info">
+                <h3>Nissan Civilian</h3>
+                <p>Stock no: <span>9067</span></p>
+                <div class="price">$7,879 <span>Price (FOB)</span></div>
+                <div class="specs">
+                  <div>
+                    <img src="assets/guage.svg" alt="Kilometer Icon" />
+                    <h4>490,000 km</h4>
+                  </div>
+                  <div>
+                    <img src="assets/manual.svg" alt="Manual Icon" />
+                    <h4>Manual</h4>
+                  </div>
+                </div>
+              </div>
+            </a>
+
+            <a href="#" class="vehicle-card">
+              <img
+                src="assets/card-img.jpg"
+                alt="Nissan Civilian"
+                class="vehicle-hero"
+              />
+              <div class="vehicle-info">
+                <h3>Nissan Civilian</h3>
+                <p>Stock no: <span>9067</span></p>
+                <div class="price">$7,879 <span>Price (FOB)</span></div>
+                <div class="specs">
+                  <div>
+                    <img src="assets/guage.svg" alt="Kilometer Icon" />
+                    <h4>490,000 km</h4>
+                  </div>
+                  <div>
+                    <img src="assets/manual.svg" alt="Manual Icon" />
+                    <h4>Manual</h4>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a href="#" class="vehicle-card">
+              <img
+                src="assets/card-img.jpg"
+                alt="Nissan Civilian"
+                class="vehicle-hero"
+              />
+              <div class="vehicle-info">
+                <h3>Nissan Civilian</h3>
+                <p>Stock no: <span>9067</span></p>
+                <div class="price">$7,879 <span>Price (FOB)</span></div>
+                <div class="specs">
+                  <div>
+                    <img src="assets/guage.svg" alt="Kilometer Icon" />
+                    <h4>490,000 km</h4>
+                  </div>
+                  <div>
+                    <img src="assets/manual.svg" alt="Manual Icon" />
+                    <h4>Manual</h4>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <a href="#" class="view-more view-mbl">View More</a>
+        </div>
+      </div>
+    </section>
+    <section class="stars-main">
+      <div class="container">
+        <div class="stats-container">
+          <div class="stat-card">
+            <div class="icon-circle">
+              <i class="fa-light fa-heart"></i>
+            </div>
+            <div class="stat-content">
+              <span class="stat-number">50+</span>
+              <span class="stat-text">Happy Customers</span>
+            </div>
+          </div>
+          <div class="stat-card">
+            <div class="icon-circle">
+              <i class="fa-light fa-car-side"></i>
+            </div>
+            <div class="stat-content">
+              <span class="stat-number">750+</span>
+              <span class="stat-text">Total car sold</span>
+            </div>
+          </div>
+          <div class="stat-card">
+            <div class="icon-circle">
+              <i class="fa-light fa-wrench"></i>
+            </div>
+            <div class="stat-content">
+              <span class="stat-number">75+</span>
+              <span class="stat-text">Cars in damage</span>
+            </div>
+          </div>
+          <div class="stat-card">
+            <div class="icon-circle">
+              <i class="fa-light fa-award"></i>
+            </div>
+            <div class="stat-content">
+              <span class="stat-number">15</span>
+              <span class="stat-text">Years on the market</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="bg-relative">
+      <div class="bg-shadow"></div>
+      <div class="container">
+        <div class="heading-arrive">
+          <h2>Best Deals</h2>
+          <a href="#" class="view-more">View More</a>
+        </div>
+
+        <div class="vehicle-grid">
+          <a href="#" class="vehicle-card">
+            <img
+              src="assets/card-img.jpg"
+              alt="Nissan Civilian"
+              class="vehicle-hero"
+            />
+            <div class="vehicle-info">
+              <h3>Nissan Civilian</h3>
+              <p>Stock no: <span>9067</span></p>
+              <div class="was-price">
+                <h5>was $8,409</h5>
+                <div class="price">
+                  <i class="fa-solid fa-circle-arrow-down-right"></i>$7,879
+                  <span>Price (FOB)</span>
+                </div>
+              </div>
+              <div class="specs">
                 <div>
-                    <form class="vs-search-controls">
-                        <div class="vs-search">
-                            <h3>By keywords</h3>
-                            <div class="vs-search-input">
-                                <i class="fa-light fa-magnifying-glass"></i>
-                                <input type="text" placeholder="Keywords" />
-                            </div>
-                        </div>
-                        <div class="vs-filter">
-                            <h3>By filters</h3>
-                            <div class="vs-filter-input">
-                                <!-- Make -->
-                                <div class="vs-select-wrapper">
-                                    <select id="makeSelect" class="vs-select">
-                                        <option value="">Make</option>
-                                        <option value="Toyota">Toyota</option>
-                                        <option value="Nissan">Nissan</option>
-                                        <option value="Mitsubishi">Mitsubishi</option>
-                                    </select>
-                                    <i class="fas fa-chevron-down vs-chevron"></i>
-                                </div>
-
-                                <!-- Model -->
-                                <div class="vs-select-wrapper">
-                                    <select id="modelSelect" class="vs-select">
-                                        <option value="">Model</option>
-                                        <option value="AZR60">AZR60</option>
-                                        <option value="G114">G114</option>
-                                        <option value="X123">X123</option>
-                                        <option value="K9">K9</option>
-                                    </select>
-                                    <i class="fas fa-chevron-down vs-chevron"></i>
-                                </div>
-
-                                <!-- Gear -->
-                                <div class="vs-select-wrapper">
-                                    <select id="gearSelect" class="vs-select">
-                                        <option value="">Gear</option>
-                                        <option value="Automatic">Automatic</option>
-                                        <option value="Manual">Manual</option>
-                                    </select>
-                                    <i class="fas fa-chevron-down vs-chevron"></i>
-                                </div>
-
-                                <!-- Year Range -->
-                                <div class="year-range">
-                                    <div class="year-label">Year</div>
-                                    <div class="year-select-wrapper">
-                                        <div class="vs-select-wrapper vs-select-wrapper-min">
-                                            <select id="yearMin" class="vs-select">
-                                                <option value="">Min</option>
-                                            </select>
-                                            <i class="fas fa-chevron-down vs-chevron"></i>
-                                        </div>
-                                        <div class="vs-select-wrapper vs-select-wrapper-max">
-                                            <select id="yearMax" class="vs-select">
-                                                <option value="">Max</option>
-                                            </select>
-                                            <i class="fas fa-chevron-down vs-chevron"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <button class="vs-search-btn"><i class="fa-regular fa-magnifying-glass"></i>Search</button>
-                    </form>
+                  <img src="assets/guage.svg" alt="Kilometer Icon" />
+                  <h4>490,000 km</h4>
                 </div>
+                <div>
+                  <img src="assets/manual.svg" alt="Manual Icon" />
+                  <h4>Manual</h4>
+                </div>
+              </div>
             </div>
-        </section>
-        <section class="search-main">
-            <div class="container search-by">
-                <div class="tab-button-group">
-                    <button id="searchByTypeBtn" class="tab-button active">Search By Type</button>
-                    <button id="searchByMakeBtn" class="tab-button">Search By Make</button>
+          </a>
+          <a href="#" class="vehicle-card">
+            <img
+              src="assets/card-img.jpg"
+              alt="Nissan Civilian"
+              class="vehicle-hero"
+            />
+            <div class="vehicle-info">
+              <h3>Nissan Civilian</h3>
+              <p>Stock no: <span>9067</span></p>
+              <div class="was-price">
+                <h5>was $8,409</h5>
+                <div class="price">
+                  <i class="fa-solid fa-circle-arrow-down-right"></i>$7,879
+                  <span>Price (FOB)</span>
                 </div>
-
-                <div class="navigation" style="position: relative; display: flex; align-items: center;">
-                    <div id="leftArrow" class="nav-arrow left hidden">
-                        <i class="fa-regular fa-angle-left"></i>
-                    </div>
-                    <div id="gridContainer" class="grid-wrapper">
-                        <!-- Vehicle Types -->
-                        <div class="vehicle-types">
-                            <a href="large-bus.html" class="grid-item">
-                                <div class="grid-item-title">
-                                    Large Bus (2) <span class="arrow-icon"><i class="fa-regular fa-arrow-right"></i></span>
-                                </div>
-                                <img src="assets/large-bus.svg" class="vehicle-type-image" alt="Large Bus" />
-                            </a>
-                            <a href="mini-bus.html" class="grid-item">
-                                <div class="grid-item-title">
-                                    Mini Bus (2) <span class="arrow-icon"><i class="fa-regular fa-arrow-right"></i></span>
-                                </div>
-                                <img src="assets/mini-bus.svg" class="vehicle-type-image" alt="Mini Bus" />
-                            </a>
-                            <a href="heavy-truck.html" class="grid-item">
-                                <div class="grid-item-title">
-                                    Heavy Truck (2) <span class="arrow-icon"><i class="fa-regular fa-arrow-right"></i></span>
-                                </div>
-                                <img src="assets/heavy-truck.svg" class="vehicle-type-image" alt="Heavy Truck" />
-                            </a>
-                            <a href="light-truck.html" class="grid-item">
-                                <div class="grid-item-title">
-                                    Light Truck (2) <span class="arrow-icon"><i class="fa-regular fa-arrow-right"></i></span>
-                                </div>
-                                <img src="assets/light-truck.svg" class="vehicle-type-image" alt="Light Truck" />
-                            </a>
-                            <a href="van.html" class="grid-item">
-                                <div class="grid-item-title">
-                                    Van (2) <span class="arrow-icon"><i class="fa-regular fa-arrow-right"></i></span>
-                                </div>
-                                <img src="assets/van.svg" class="vehicle-type-image" alt="Van" />
-                            </a>
-                            <a href="mini-van.html" class="grid-item">
-                                <div class="grid-item-title">
-                                    Mini Van (2) <span class="arrow-icon"><i class="fa-regular fa-arrow-right"></i></span>
-                                </div>
-                                <img src="assets/mini-van.svg" class="vehicle-type-image" alt="Mini Van" />
-                            </a>
-                            <a href="suv.html" class="grid-item">
-                                <div class="grid-item-title">
-                                    Suv (2) <span class="arrow-icon"><i class="fa-regular fa-arrow-right"></i></span>
-                                </div>
-                                <img src="assets/suv.svg" class="vehicle-type-image" alt="Suv" />
-                            </a>
-                            <a href="sedan.html" class="grid-item">
-                                <div class="grid-item-title">
-                                    Sedan (2) <span class="arrow-icon"><i class="fa-regular fa-arrow-right"></i></span>
-                                </div>
-                                <img src="assets/sedan.svg" class="vehicle-type-image" alt="Sedan" />
-                            </a>
-                            <a href="wagon.html" class="grid-item">
-                                <div class="grid-item-title">
-                                    Wagon (2) <span class="arrow-icon"><i class="fa-regular fa-arrow-right"></i></span>
-                                </div>
-                                <img src="assets/wagon.svg" class="vehicle-type-image" alt="Wagon" />
-                            </a>
-                            <a href="hatchback.html" class="grid-item">
-                                <div class="grid-item-title">
-                                    Hatchback (2) <span class="arrow-icon"><i class="fa-regular fa-arrow-right"></i></span>
-                                </div>
-                                <img src="assets/hatchback.svg" class="vehicle-type-image" alt="Hatchback" />
-                            </a>
-                            <a href="pick-up.html" class="grid-item">
-                                <div class="grid-item-title">
-                                    Pick Up (2) <span class="arrow-icon"><i class="fa-regular fa-arrow-right"></i></span>
-                                </div>
-                                <img src="assets/pick-up.svg" class="vehicle-type-image" alt="Pick Up" />
-                            </a>
-                            <a href="machinery.html" class="grid-item">
-                                <div class="grid-item-title">
-                                    Machinery (2) <span class="arrow-icon"><i class="fa-regular fa-arrow-right"></i></span>
-                                </div>
-                                <img src="assets/machinery.svg" class="vehicle-type-image" alt="Machinery" />
-                            </a>
-                            <a href="large-bus-alt.html" class="grid-item">
-                                <div class="grid-item-title">
-                                    Large bus (2) <span class="arrow-icon"><i class="fa-regular fa-arrow-right"></i></span>
-                                </div>
-                                <img src="assets/mini-bus.svg" class="vehicle-type-image" alt="Large bus" />
-                            </a>
-                        </div>
-
-                        <!-- Vehicle Makes -->
-                        <div class="vehicle-makes">
-                            <a href="tayota.html" class="grid-item">
-                                <div class="grid-item-title">
-                                    Tayota (9) <span class="arrow-icon"><i class="fa-regular fa-arrow-right"></i></span>
-                                </div>
-                                <img src="assets/tayota.svg" class="vehicle-make-image" alt="Tayota" />
-                            </a>
-                            <a href="mitsubishi.html" class="grid-item">
-                                <div class="grid-item-title">
-                                    Mitsubishi (2) <span class="arrow-icon"><i class="fa-regular fa-arrow-right"></i></span>
-                                </div>
-                                <img src="assets/mitsubishi.svg" class="vehicle-make-image" alt="Mitsubishi" />
-                            </a>
-                            <a href="nissan.html" class="grid-item">
-                                <div class="grid-item-title">
-                                    Nissan (2) <span class="arrow-icon"><i class="fa-regular fa-arrow-right"></i></span>
-                                </div>
-                                <img src="assets/nissan.svg" class="vehicle-make-image" alt="Nissan" />
-                            </a>
-                            <a href="isuzu.html" class="grid-item">
-                                <div class="grid-item-title">
-                                    Isuzu (2) <span class="arrow-icon"><i class="fa-regular fa-arrow-right"></i></span>
-                                </div>
-                                <img src="assets/isuzu.svg" class="vehicle-make-image" alt="Isuzu" />
-                            </a>
-                            <a href="hino.html" class="grid-item">
-                                <div class="grid-item-title">
-                                    Hino (2) <span class="arrow-icon"><i class="fa-regular fa-arrow-right"></i></span>
-                                </div>
-                                <img src="assets/hino.svg" class="vehicle-make-image" alt="Hino" />
-                            </a>
-                            <a href="suzuki.html" class="grid-item">
-                                <div class="grid-item-title">
-                                    Suzuki (2) <span class="arrow-icon"><i class="fa-regular fa-arrow-right"></i></span>
-                                </div>
-                                <img src="assets/suzuki.svg" class="vehicle-make-image" alt="Suzuki" />
-                            </a>
-                            <a href="mercedes-benz.html" class="grid-item">
-                                <div class="grid-item-title">
-                                    Mercedes - Benz (2) <span class="arrow-icon"><i class="fa-regular fa-arrow-right"></i></span>
-                                </div>
-                                <img src="assets/benz.svg" class="vehicle-make-image" alt="Mercedes - Benz" />
-                            </a>
-                            <a href="volvo.html" class="grid-item">
-                                <div class="grid-item-title">
-                                    Volvo (2) <span class="arrow-icon"><i class="fa-regular fa-arrow-right"></i></span>
-                                </div>
-                                <img src="assets/volvo.svg" class="vehicle-make-image" alt="Volvo" />
-                            </a>
-                            <a href="bmw.html" class="grid-item">
-                                <div class="grid-item-title">
-                                    BMW (2) <span class="arrow-icon"><i class="fa-regular fa-arrow-right"></i></span>
-                                </div>
-                                <img src="assets/bmw.svg" class="vehicle-make-image" alt="BMW" />
-                            </a>
-                            <a href="ford.html" class="grid-item">
-                                <div class="grid-item-title">
-                                    Ford (2) <span class="arrow-icon"><i class="fa-regular fa-arrow-right"></i></span>
-                                </div>
-                                <img src="assets/ford.svg" class="vehicle-make-image" alt="Ford" />
-                            </a>
-                            <a href="honda.html" class="grid-item">
-                                <div class="grid-item-title">
-                                    Honda (2) <span class="arrow-icon"><i class="fa-regular fa-arrow-right"></i></span>
-                                </div>
-                                <img src="assets/honda.svg" class="vehicle-make-image" alt="Honda" />
-                            </a>
-                            <a href="mazda.html" class="grid-item">
-                                <div class="grid-item-title">
-                                    Mazda (2) <span class="arrow-icon"><i class="fa-regular fa-arrow-right"></i></span>
-                                </div>
-                                <img src="assets/mazda.svg" class="vehicle-make-image" alt="Mazda" />
-                            </a>
-                            <a href="tayota-alt.html" class="grid-item">
-                                <div class="grid-item-title">
-                                    Tayota (2) <span class="arrow-icon"><i class="fa-regular fa-arrow-right"></i></span>
-                                </div>
-                                <img src="assets/tayota.svg" class="vehicle-make-image" alt="Tayota" />
-                            </a>
-                        </div>
-                    </div>
-                    <div id="rightArrow" class="nav-arrow right">
-                        <i class="fa-regular fa-angle-right"></i>
-                    </div>
+              </div>
+              <div class="specs">
+                <div>
+                  <img src="assets/guage.svg" alt="Kilometer Icon" />
+                  <h4>490,000 km</h4>
                 </div>
-
-                <div id="paginationDots" class="pagination-dots"></div>
+                <div>
+                  <img src="assets/manual.svg" alt="Manual Icon" />
+                  <h4>Manual</h4>
+                </div>
+              </div>
             </div>
-        </section>
-        <section>
-            <div class="arrive-bg">
-                <div class="container">
-                    <div class="heading-arrive">
-                        <h2>New Arrivals</h2>
-                        <a href="#" class="view-more">View More</a>
-                    </div>
-
-                    <div class="vehicle-grid">
-                        <a href="#" class="vehicle-card">
-                            <img src="assets/card-img.jpg" alt="Nissan Civilian" class="vehicle-hero" />
-                            <div class="vehicle-info">
-                                <h3>Nissan Civilian</h3>
-                                <p>Stock no: <span>9067</span></p>
-                                <div class="price">$7,879 <span>Price (FOB)</span></div>
-                                <div class="specs">
-                                    <div>
-                                        <img src="assets/guage.svg" alt="Kilometer Icon" />
-                                        <h4>490,000 km</h4>
-                                    </div>
-                                    <div>
-                                        <img src="assets/manual.svg" alt="Manual Icon" />
-                                        <h4>Manual</h4>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-
-                        <a href="#" class="vehicle-card">
-                            <img src="assets/card-img.jpg" alt="Nissan Civilian" class="vehicle-hero" />
-                            <div class="vehicle-info">
-                                <h3>Nissan Civilian</h3>
-                                <p>Stock no: <span>9067</span></p>
-                                <div class="price">$7,879 <span>Price (FOB)</span></div>
-                                <div class="specs">
-                                    <div>
-                                        <img src="assets/guage.svg" alt="Kilometer Icon" />
-                                        <h4>490,000 km</h4>
-                                    </div>
-                                    <div>
-                                        <img src="assets/manual.svg" alt="Manual Icon" />
-                                        <h4>Manual</h4>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-
-                        <a href="#" class="vehicle-card">
-                            <img src="assets/card-img.jpg" alt="Nissan Civilian" class="vehicle-hero" />
-                            <div class="vehicle-info">
-                                <h3>Nissan Civilian</h3>
-                                <p>Stock no: <span>9067</span></p>
-                                <div class="price">$7,879 <span>Price (FOB)</span></div>
-                                <div class="specs">
-                                    <div>
-                                        <img src="assets/guage.svg" alt="Kilometer Icon" />
-                                        <h4>490,000 km</h4>
-                                    </div>
-                                    <div>
-                                        <img src="assets/manual.svg" alt="Manual Icon" />
-                                        <h4>Manual</h4>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-
-                        <a href="#" class="vehicle-card">
-                            <img src="assets/card-img.jpg" alt="Nissan Civilian" class="vehicle-hero" />
-                            <div class="vehicle-info">
-                                <h3>Nissan Civilian</h3>
-                                <p>Stock no: <span>9067</span></p>
-                                <div class="price">$7,879 <span>Price (FOB)</span></div>
-                                <div class="specs">
-                                    <div>
-                                        <img src="assets/guage.svg" alt="Kilometer Icon" />
-                                        <h4>490,000 km</h4>
-                                    </div>
-                                    <div>
-                                        <img src="assets/manual.svg" alt="Manual Icon" />
-                                        <h4>Manual</h4>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="#" class="vehicle-card">
-                            <img src="assets/card-img.jpg" alt="Nissan Civilian" class="vehicle-hero" />
-                            <div class="vehicle-info">
-                                <h3>Nissan Civilian</h3>
-                                <p>Stock no: <span>9067</span></p>
-                                <div class="price">$7,879 <span>Price (FOB)</span></div>
-                                <div class="specs">
-                                    <div>
-                                        <img src="assets/guage.svg" alt="Kilometer Icon" />
-                                        <h4>490,000 km</h4>
-                                    </div>
-                                    <div>
-                                        <img src="assets/manual.svg" alt="Manual Icon" />
-                                        <h4>Manual</h4>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <a href="#" class="view-more view-mbl">View More</a>
+          </a>
+          <a href="#" class="vehicle-card">
+            <img
+              src="assets/card-img.jpg"
+              alt="Nissan Civilian"
+              class="vehicle-hero"
+            />
+            <div class="vehicle-info">
+              <h3>Nissan Civilian</h3>
+              <p>Stock no: <span>9067</span></p>
+              <div class="was-price">
+                <h5>was $8,409</h5>
+                <div class="price">
+                  <i class="fa-solid fa-circle-arrow-down-right"></i>$7,879
+                  <span>Price (FOB)</span>
                 </div>
+              </div>
+              <div class="specs">
+                <div>
+                  <img src="assets/guage.svg" alt="Kilometer Icon" />
+                  <h4>490,000 km</h4>
+                </div>
+                <div>
+                  <img src="assets/manual.svg" alt="Manual Icon" />
+                  <h4>Manual</h4>
+                </div>
+              </div>
             </div>
-        </section>
-        <section class="stars-main">
-            <div class="container">
-                <div class="stats-container">
-                    <div class="stat-card">
-                        <div class="icon-circle">
-                            <i class="fa-light fa-heart"></i>
-                        </div>
-                        <div class="stat-content">
-                            <span class="stat-number">50+</span>
-                            <span class="stat-text">Happy Customers</span>
-                        </div>
-                    </div>
-                    <div class="stat-card">
-                        <div class="icon-circle">
-                            <i class="fa-light fa-car-side"></i>
-                        </div>
-                        <div class="stat-content">
-                            <span class="stat-number">750+</span>
-                            <span class="stat-text">Total car sold</span>
-                        </div>
-                    </div>
-                    <div class="stat-card">
-                        <div class="icon-circle">
-                            <i class="fa-light fa-wrench"></i>
-                        </div>
-                        <div class="stat-content">
-                            <span class="stat-number">75+</span>
-                            <span class="stat-text">Cars in damage</span>
-                        </div>
-                    </div>
-                    <div class="stat-card">
-                        <div class="icon-circle">
-                            <i class="fa-light fa-award"></i>
-                        </div>
-                        <div class="stat-content">
-                            <span class="stat-number">15</span>
-                            <span class="stat-text">Years on the market</span>
-                        </div>
-                    </div>
-                </div>
+          </a>
+          <a href="#" class="vehicle-card">
+            <div class="vehicle-img-wrapper">
+              <img
+                src="assets/card-img.jpg"
+                alt="Nissan Civilian"
+                class="vehicle-hero"
+              />
+              <div class="vehicle-badge">Reserved</div>
+              <div class="vehicle-overlay"></div>
             </div>
-        </section>
-        <section class="bg-relative">
-            <div class="bg-shadow"></div>
-            <div class="container">
-                <div class="heading-arrive">
-                    <h2>Best Deals</h2>
-                    <a href="#" class="view-more">View More</a>
+            <div class="vehicle-info">
+              <h3>Nissan Civilian</h3>
+              <p>Stock no: <span>9067</span></p>
+              <div class="was-price">
+                <h5>was $8,409</h5>
+                <div class="price">
+                  <i class="fa-solid fa-circle-arrow-down-right"></i>$7,879
+                  <span>Price (FOB)</span>
                 </div>
-
-                <div class="vehicle-grid">
-                    <a href="#" class="vehicle-card">
-                        <img src="assets/card-img.jpg" alt="Nissan Civilian" class="vehicle-hero" />
-                        <div class="vehicle-info">
-                            <h3>Nissan Civilian</h3>
-                            <p>Stock no: <span>9067</span></p>
-                            <div class="was-price">
-                                <h5>was $8,409</h5>
-                                <div class="price"><i class="fa-solid fa-circle-arrow-down-right"></i>$7,879 <span>Price (FOB)</span></div>
-                            </div>
-                            <div class="specs">
-                                <div>
-                                    <img src="assets/guage.svg" alt="Kilometer Icon" />
-                                    <h4>490,000 km</h4>
-                                </div>
-                                <div>
-                                    <img src="assets/manual.svg" alt="Manual Icon" />
-                                    <h4>Manual</h4>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="#" class="vehicle-card">
-                        <img src="assets/card-img.jpg" alt="Nissan Civilian" class="vehicle-hero" />
-                        <div class="vehicle-info">
-                            <h3>Nissan Civilian</h3>
-                            <p>Stock no: <span>9067</span></p>
-                            <div class="was-price">
-                                <h5>was $8,409</h5>
-                                <div class="price"><i class="fa-solid fa-circle-arrow-down-right"></i>$7,879 <span>Price (FOB)</span></div>
-                            </div>
-                            <div class="specs">
-                                <div>
-                                    <img src="assets/guage.svg" alt="Kilometer Icon" />
-                                    <h4>490,000 km</h4>
-                                </div>
-                                <div>
-                                    <img src="assets/manual.svg" alt="Manual Icon" />
-                                    <h4>Manual</h4>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="#" class="vehicle-card">
-                        <img src="assets/card-img.jpg" alt="Nissan Civilian" class="vehicle-hero" />
-                        <div class="vehicle-info">
-                            <h3>Nissan Civilian</h3>
-                            <p>Stock no: <span>9067</span></p>
-                            <div class="was-price">
-                                <h5>was $8,409</h5>
-                                <div class="price"><i class="fa-solid fa-circle-arrow-down-right"></i>$7,879 <span>Price (FOB)</span></div>
-                            </div>
-                            <div class="specs">
-                                <div>
-                                    <img src="assets/guage.svg" alt="Kilometer Icon" />
-                                    <h4>490,000 km</h4>
-                                </div>
-                                <div>
-                                    <img src="assets/manual.svg" alt="Manual Icon" />
-                                    <h4>Manual</h4>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="#" class="vehicle-card">
-                        <div class="vehicle-img-wrapper">
-                            <img src="assets/card-img.jpg" alt="Nissan Civilian" class="vehicle-hero" />
-                            <div class="vehicle-badge">Reserved</div>
-                            <div class="vehicle-overlay"></div>
-                        </div>
-                        <div class="vehicle-info">
-                            <h3>Nissan Civilian</h3>
-                            <p>Stock no: <span>9067</span></p>
-                            <div class="was-price">
-                                <h5>was $8,409</h5>
-                                <div class="price"><i class="fa-solid fa-circle-arrow-down-right"></i>$7,879 <span>Price (FOB)</span></div>
-                            </div>
-                            <div class="specs">
-                                <div>
-                                    <img src="assets/guage.svg" alt="Kilometer Icon" />
-                                    <h4>490,000 km</h4>
-                                </div>
-                                <div>
-                                    <img src="assets/manual.svg" alt="Manual Icon" />
-                                    <h4>Manual</h4>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="#" class="vehicle-card">
-                        <div class="vehicle-img-wrapper">
-                            <img src="assets/card-img.jpg" alt="Nissan Civilian" class="vehicle-hero" />
-                            <div class="vehicle-badge">Reserved</div>
-                            <div class="vehicle-overlay"></div>
-                        </div>
-                        <div class="vehicle-info">
-                            <h3>Nissan Civilian</h3>
-                            <p>Stock no: <span>9067</span></p>
-                            <div class="was-price">
-                                <h5>was $8,409</h5>
-                                <div class="price"><i class="fa-solid fa-circle-arrow-down-right"></i>$7,879 <span>Price (FOB)</span></div>
-                            </div>
-                            <div class="specs">
-                                <div>
-                                    <img src="assets/guage.svg" alt="Kilometer Icon" />
-                                    <h4>490,000 km</h4>
-                                </div>
-                                <div>
-                                    <img src="assets/manual.svg" alt="Manual Icon" />
-                                    <h4>Manual</h4>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="#" class="vehicle-card">
-                        <img src="assets/card-img.jpg" alt="Nissan Civilian" class="vehicle-hero" />
-                        <div class="vehicle-info">
-                            <h3>Nissan Civilian</h3>
-                            <p>Stock no: <span>9067</span></p>
-                            <div class="was-price">
-                                <h5>was $8,409</h5>
-                                <div class="price"><i class="fa-solid fa-circle-arrow-down-right"></i>$7,879 <span>Price (FOB)</span></div>
-                            </div>
-                            <div class="specs">
-                                <div>
-                                    <img src="assets/guage.svg" alt="Kilometer Icon" />
-                                    <h4>490,000 km</h4>
-                                </div>
-                                <div>
-                                    <img src="assets/manual.svg" alt="Manual Icon" />
-                                    <h4>Manual</h4>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="#" class="vehicle-card">
-                        <img src="assets/card-img.jpg" alt="Nissan Civilian" class="vehicle-hero" />
-                        <div class="vehicle-info">
-                            <h3>Nissan Civilian</h3>
-                            <p>Stock no: <span>9067</span></p>
-                            <div class="was-price">
-                                <h5>was $8,409</h5>
-                                <div class="price"><i class="fa-solid fa-circle-arrow-down-right"></i>$7,879 <span>Price (FOB)</span></div>
-                            </div>
-                            <div class="specs">
-                                <div>
-                                    <img src="assets/guage.svg" alt="Kilometer Icon" />
-                                    <h4>490,000 km</h4>
-                                </div>
-                                <div>
-                                    <img src="assets/manual.svg" alt="Manual Icon" />
-                                    <h4>Manual</h4>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="#" class="vehicle-card">
-                        <div class="vehicle-img-wrapper">
-                            <img src="assets/card-img.jpg" alt="Nissan Civilian" class="vehicle-hero" />
-                            <div class="vehicle-badge">Reserved</div>
-                            <div class="vehicle-overlay"></div>
-                        </div>
-                        <div class="vehicle-info">
-                            <h3>Nissan Civilian</h3>
-                            <p>Stock no: <span>9067</span></p>
-                            <div class="was-price">
-                                <h5>was $8,409</h5>
-                                <div class="price"><i class="fa-solid fa-circle-arrow-down-right"></i>$7,879 <span>Price (FOB)</span></div>
-                            </div>
-                            <div class="specs">
-                                <div>
-                                    <img src="assets/guage.svg" alt="Kilometer Icon" />
-                                    <h4>490,000 km</h4>
-                                </div>
-                                <div>
-                                    <img src="assets/manual.svg" alt="Manual Icon" />
-                                    <h4>Manual</h4>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="#" class="vehicle-card">
-                        <img src="assets/card-img.jpg" alt="Nissan Civilian" class="vehicle-hero" />
-                        <div class="vehicle-info">
-                            <h3>Nissan Civilian</h3>
-                            <p>Stock no: <span>9067</span></p>
-                            <div class="was-price">
-                                <h5>was $8,409</h5>
-                                <div class="price"><i class="fa-solid fa-circle-arrow-down-right"></i>$7,879 <span>Price (FOB)</span></div>
-                            </div>
-                            <div class="specs">
-                                <div>
-                                    <img src="assets/guage.svg" alt="Kilometer Icon" />
-                                    <h4>490,000 km</h4>
-                                </div>
-                                <div>
-                                    <img src="assets/manual.svg" alt="Manual Icon" />
-                                    <h4>Manual</h4>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="#" class="vehicle-card">
-                        <img src="assets/card-img.jpg" alt="Nissan Civilian" class="vehicle-hero" />
-                        <div class="vehicle-info">
-                            <h3>Nissan Civilian</h3>
-                            <p>Stock no: <span>9067</span></p>
-                            <div class="was-price">
-                                <h5>was $8,409</h5>
-                                <div class="price"><i class="fa-solid fa-circle-arrow-down-right"></i>$7,879 <span>Price (FOB)</span></div>
-                            </div>
-                            <div class="specs">
-                                <div>
-                                    <img src="assets/guage.svg" alt="Kilometer Icon" />
-                                    <h4>490,000 km</h4>
-                                </div>
-                                <div>
-                                    <img src="assets/manual.svg" alt="Manual Icon" />
-                                    <h4>Manual</h4>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
+              </div>
+              <div class="specs">
+                <div>
+                  <img src="assets/guage.svg" alt="Kilometer Icon" />
+                  <h4>490,000 km</h4>
                 </div>
-                <a href="#" class="view-more view-mbl">View More</a>
+                <div>
+                  <img src="assets/manual.svg" alt="Manual Icon" />
+                  <h4>Manual</h4>
+                </div>
+              </div>
             </div>
-        </section>
-        <section class="arrive-bg arrive-bg2">
-            <div class="container">
-                <div class="how-it-works">
-                    <h2>How does it work?</h2>
-                    <div class="steps">
-                        <div class="step">
-                            <div class="circle">1</div>
-                            <h3>Get a price quote</h3>
-                            <p>Lorem ipsum pellentesque malesuada cras at volutpat ridiculus et in.</p>
-                            <img src="assets/Arc 2.svg" alt="Curve Arrow" class="curve-arrow arc-2 arc-3" />
-                        </div>
-
-                        <div class="step">
-                            <div class="circle">2</div>
-                            <h3>Payments</h3>
-                            <p>Lorem ipsum pellentesque malesuada cras at volutpat ridiculus et in.</p>
-                            <img src="assets/Arc 4.svg" alt="Curve Arrow" class="curve-arrow arc-4" />
-                        </div>
-
-                        <div class="step">
-                            <div class="circle">3</div>
-                            <h3>Shipment and delivery</h3>
-                            <p>Lorem ipsum pellentesque malesuada cras at volutpat ridiculus et in.</p>
-                            <img src="assets/Arc 2.svg" alt="Curve Arrow" class="curve-arrow arc-2" />
-                        </div>
-
-                        <div class="step">
-                            <div class="circle">4</div>
-                            <h3>Get the vehicle safe</h3>
-                            <p>Lorem ipsum pellentesque malesuada cras at volutpat ridiculus et in.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="heading-arrive">
-                    <h2>Our Customers Feedback</h2>
-                    <a href="#" class="view-more">View All Reviews</a>
-                </div>
-                <div class="slider-container">
-                    <div class="slides-wrapper" id="slidesWrapper">
-                        <div class="slide">
-                            <div class="testimonial-content">
-                                <div class="star-rating">
-                                    <i class="fa-sharp fa-solid fa-star"></i>
-                                    <i class="fa-sharp fa-solid fa-star"></i>
-                                    <i class="fa-sharp fa-solid fa-star"></i>
-                                    <i class="fa-sharp fa-solid fa-star"></i>
-                                    <i class="fa-sharp fa-solid fa-star"></i>
-                                </div>
-                                <h2>I'm grateful</h2>
-                                <p class="grate-desc">"Já recebi o carro e estou muito agradecido. O carro está em boas condições. Chinai Calisto Basilio Mozambique"</p>
-                                <p class="date-on">On 13/05/2025</p>
-                            </div>
-                            <div class="quote-image-wrapper">
-                                <img src="assets/gratefull.png" alt="Testimonial Image" class="quote-image" />
-                                <div class="quote-icon"><img src="assets/quote.svg" alt="" /></div>
-                            </div>
-                        </div>
-                        <div class="slide">
-                            <div class="testimonial-content">
-                                <div class="star-rating">
-                                    <i class="fa-sharp fa-solid fa-star"></i>
-                                    <i class="fa-sharp fa-solid fa-star"></i>
-                                    <i class="fa-sharp fa-solid fa-star"></i>
-                                    <i class="fa-sharp fa-solid fa-star"></i>
-                                    <i class="fa-sharp fa-solid fa-star"></i>
-                                </div>
-                                <h2>Excellent Service!</h2>
-                                <p class="grate-desc">"Já recebi o carro e estou muito agradecido. O carro está em boas condições. Chinai Calisto Basilio Mozambique"</p>
-                                <p class="date-on">On 13/05/2025</p>
-                            </div>
-                            <div class="quote-image-wrapper">
-                                <img src="assets/gratefull.png" alt="Testimonial Image" class="quote-image" />
-                                <div class="quote-icon"><img src="assets/quote.svg" alt="" /></div>
-                            </div>
-                        </div>
-                        <div class="slide">
-                            <div class="testimonial-content">
-                                <div class="star-rating">
-                                    <i class="fa-sharp fa-solid fa-star"></i>
-                                    <i class="fa-sharp fa-solid fa-star"></i>
-                                    <i class="fa-sharp fa-solid fa-star"></i>
-                                    <i class="fa-sharp fa-solid fa-star"></i>
-                                    <i class="fa-sharp fa-solid fa-star"></i>
-                                </div>
-                                <h2>Highly Recommended!</h2>
-                                <p class="grate-desc">"Já recebi o carro e estou muito agradecido. O carro está em boas condições. Chinai Calisto Basilio Mozambique"</p>
-                                <p class="date-on">On 13/05/2025</p>
-                            </div>
-                            <div class="quote-image-wrapper">
-                                <img src="assets/gratefull.png" alt="Testimonial Image" class="quote-image" />
-                                <div class="quote-icon"><img src="assets/quote.svg" alt="" /></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="dot-ft">
-                        <button class="nav-button prev" id="prevButton">
-                            <i class="fa-regular fa-angle-left"></i>
-                        </button>
-
-                        <div class="dot-navigation" id="dotNavigation"></div>
-                        <button class="nav-button next" id="nextButton">
-                            <i class="fa-regular fa-angle-right"></i>
-                        </button>
-                    </div>
-                </div>
-                <a href="#" class="view-more view-mbl">View All Reviews</a>
+          </a>
+          <a href="#" class="vehicle-card">
+            <div class="vehicle-img-wrapper">
+              <img
+                src="assets/card-img.jpg"
+                alt="Nissan Civilian"
+                class="vehicle-hero"
+              />
+              <div class="vehicle-badge">Reserved</div>
+              <div class="vehicle-overlay"></div>
             </div>
-        </section>
-        <section class="bg-relative2">
-            <div class="bg-shadow2"></div>
-            <div class="container">
-                <div class="heading-arrive">
-                    <h2>Latest News</h2>
-                    <a href="#" class="view-more">View All News</a>
+            <div class="vehicle-info">
+              <h3>Nissan Civilian</h3>
+              <p>Stock no: <span>9067</span></p>
+              <div class="was-price">
+                <h5>was $8,409</h5>
+                <div class="price">
+                  <i class="fa-solid fa-circle-arrow-down-right"></i>$7,879
+                  <span>Price (FOB)</span>
                 </div>
-                <div class="hero-section">
-                    <div class="hero-card large-card">
-                        <img src="assets/news-1.png" alt="Meet up with Company lawyer and the team" />
-                        <div class="card-overlay">
-                            <p class="date">On 13/05/2025</p>
-                            <h2>Meet up with Company lawyer and the team</h2>
-                            <p class="description">Sakura Motors Tanzania shareholders Mr Naraka de Souza and Mr Niosh Karunapeli, with Sakura Motors Tanzania team meet the Company lawyer Mr Blardes.</p>
-                        </div>
-                    </div>
-                    <div class="side-cards">
-                        <div class="hero-card small-card">
-                            <img src="assets/news-2.png" alt="Meet up Mr Thomas Sichone" />
-                            <div class="card-overlay">
-                                <p class="date">On 13/05/2025</p>
-                                <h2>Meet up Mr Thomas Sichone</h2>
-                            </div>
-                        </div>
-                        <div class="hero-card small-card">
-                            <img src="assets/new-3.png" alt="New Business Engagements!!" />
-                            <div class="card-overlay">
-                                <p class="date">On 13/05/2025</p>
-                                <h2>New Business Engagements!!</h2>
-                            </div>
-                        </div>
-                    </div>
+              </div>
+              <div class="specs">
+                <div>
+                  <img src="assets/guage.svg" alt="Kilometer Icon" />
+                  <h4>490,000 km</h4>
                 </div>
-                <div class="social-link-main">
-                    <a href="#" class="social-link">
-                        <img src="assets/facebook.svg" alt="facebook" />
-                    </a>
-                    <a href="#" class="social-link">
-                        <img src="assets/yt.svg" alt="yt" />
-                    </a>
-                    <a href="#" class="social-link">
-                        <img src="assets/insta.svg" alt="insta" />
-                    </a>
+                <div>
+                  <img src="assets/manual.svg" alt="Manual Icon" />
+                  <h4>Manual</h4>
                 </div>
+              </div>
             </div>
-        </section>
-        <footer class="footer">
-            <div class="footer-container">
-                <div class="footer-section about-us">
-                    <div class="about-us-contact">
-                        <a href="index.html" class="footer-logo">
-                            <img src="assets/logo.svg" alt="Sakura Motors Footer Logo" />
-                        </a>
-                        <div class="contact-info-footer">
-                            <i class="fa-regular fa-phone"></i>
-                            <p>+81-29-868-3668</p>
-                        </div>
-                    </div>
-                    <p>
-                        We believe in offering you the best customer service possible. We have been in the vehicle trading business for over 15 years in Japan. Our new company, established in 2011, is even better equipped to provide you
-                        with your dream vehicle.
-                    </p>
+          </a>
+          <a href="#" class="vehicle-card">
+            <img
+              src="assets/card-img.jpg"
+              alt="Nissan Civilian"
+              class="vehicle-hero"
+            />
+            <div class="vehicle-info">
+              <h3>Nissan Civilian</h3>
+              <p>Stock no: <span>9067</span></p>
+              <div class="was-price">
+                <h5>was $8,409</h5>
+                <div class="price">
+                  <i class="fa-solid fa-circle-arrow-down-right"></i>$7,879
+                  <span>Price (FOB)</span>
                 </div>
-                <div class="footer-right">
-                    <div class="footer-section helpful-links">
-                        <h3>Helpful Links</h3>
-                        <ul>
-                            <li><a href="#" class="active-ft">Home</a></li>
-                            <li><a href="#">Stock</a></li>
-                            <li><a href="#">About Company</a></li>
-                            <li><a href="#">News</a></li>
-                            <li><a href="#">Contact Us</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-section contact-details">
-                        <h3>Contact</h3>
-                        <p><strong>Email:</strong> info@sakuramotors.com</p>
-                        <p><strong>Phone Office:</strong><span> +81-29-868-3668</span></p>
-                        <p><strong>Phone Mobile:</strong><span> +81-90-9945-6908, +81-90-9345-1234</span></p>
-                        <p><strong>Fax:</strong><span> +81-29-868-3669</span></p>
-                    </div>
-                    <div class="footer-section visit-us">
-                        <h3>Visit Us</h3>
-                        <p><strong>Showroom:</strong> Ibaraki Ken, Tsukuba Shi, Gakuen Minami, 3 - 48 - 48, 〒 305 - 0818</p>
-                        <p><strong>Yard:</strong> Ibaraki Ken, Banda shi, Matate, 1086-1, 〒 306 - 0605</p>
-                    </div>
+              </div>
+              <div class="specs">
+                <div>
+                  <img src="assets/guage.svg" alt="Kilometer Icon" />
+                  <h4>490,000 km</h4>
                 </div>
+                <div>
+                  <img src="assets/manual.svg" alt="Manual Icon" />
+                  <h4>Manual</h4>
+                </div>
+              </div>
             </div>
-            <div class="copyright">
-                <p>© 2025 All rights reserved</p>
-                <a href="#" class="back-to-top">Back to the top <i class="fas fa-chevron-up"></i></a>
+          </a>
+          <a href="#" class="vehicle-card">
+            <img
+              src="assets/card-img.jpg"
+              alt="Nissan Civilian"
+              class="vehicle-hero"
+            />
+            <div class="vehicle-info">
+              <h3>Nissan Civilian</h3>
+              <p>Stock no: <span>9067</span></p>
+              <div class="was-price">
+                <h5>was $8,409</h5>
+                <div class="price">
+                  <i class="fa-solid fa-circle-arrow-down-right"></i>$7,879
+                  <span>Price (FOB)</span>
+                </div>
+              </div>
+              <div class="specs">
+                <div>
+                  <img src="assets/guage.svg" alt="Kilometer Icon" />
+                  <h4>490,000 km</h4>
+                </div>
+                <div>
+                  <img src="assets/manual.svg" alt="Manual Icon" />
+                  <h4>Manual</h4>
+                </div>
+              </div>
             </div>
-        </footer>
-        <!-- jQuery + Select2 -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+          </a>
+          <a href="#" class="vehicle-card">
+            <div class="vehicle-img-wrapper">
+              <img
+                src="assets/card-img.jpg"
+                alt="Nissan Civilian"
+                class="vehicle-hero"
+              />
+              <div class="vehicle-badge">Reserved</div>
+              <div class="vehicle-overlay"></div>
+            </div>
+            <div class="vehicle-info">
+              <h3>Nissan Civilian</h3>
+              <p>Stock no: <span>9067</span></p>
+              <div class="was-price">
+                <h5>was $8,409</h5>
+                <div class="price">
+                  <i class="fa-solid fa-circle-arrow-down-right"></i>$7,879
+                  <span>Price (FOB)</span>
+                </div>
+              </div>
+              <div class="specs">
+                <div>
+                  <img src="assets/guage.svg" alt="Kilometer Icon" />
+                  <h4>490,000 km</h4>
+                </div>
+                <div>
+                  <img src="assets/manual.svg" alt="Manual Icon" />
+                  <h4>Manual</h4>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="#" class="vehicle-card">
+            <img
+              src="assets/card-img.jpg"
+              alt="Nissan Civilian"
+              class="vehicle-hero"
+            />
+            <div class="vehicle-info">
+              <h3>Nissan Civilian</h3>
+              <p>Stock no: <span>9067</span></p>
+              <div class="was-price">
+                <h5>was $8,409</h5>
+                <div class="price">
+                  <i class="fa-solid fa-circle-arrow-down-right"></i>$7,879
+                  <span>Price (FOB)</span>
+                </div>
+              </div>
+              <div class="specs">
+                <div>
+                  <img src="assets/guage.svg" alt="Kilometer Icon" />
+                  <h4>490,000 km</h4>
+                </div>
+                <div>
+                  <img src="assets/manual.svg" alt="Manual Icon" />
+                  <h4>Manual</h4>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="#" class="vehicle-card">
+            <img
+              src="assets/card-img.jpg"
+              alt="Nissan Civilian"
+              class="vehicle-hero"
+            />
+            <div class="vehicle-info">
+              <h3>Nissan Civilian</h3>
+              <p>Stock no: <span>9067</span></p>
+              <div class="was-price">
+                <h5>was $8,409</h5>
+                <div class="price">
+                  <i class="fa-solid fa-circle-arrow-down-right"></i>$7,879
+                  <span>Price (FOB)</span>
+                </div>
+              </div>
+              <div class="specs">
+                <div>
+                  <img src="assets/guage.svg" alt="Kilometer Icon" />
+                  <h4>490,000 km</h4>
+                </div>
+                <div>
+                  <img src="assets/manual.svg" alt="Manual Icon" />
+                  <h4>Manual</h4>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <a href="#" class="view-more view-mbl">View More</a>
+      </div>
+    </section>
+    <section class="arrive-bg arrive-bg2">
+      <div class="container">
+        <div class="how-it-works">
+          <h2>How does it work?</h2>
+          <div class="steps">
+            <div class="step">
+              <div class="circle">1</div>
+              <h3>Get a price quote</h3>
+              <p>
+                Lorem ipsum pellentesque malesuada cras at volutpat ridiculus et
+                in.
+              </p>
+              <img
+                src="assets/Arc 2.svg"
+                alt="Curve Arrow"
+                class="curve-arrow arc-2 arc-3"
+              />
+            </div>
 
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
-        <script src="js/script.js"></script>
-        <script src="js/header.js"></script>
-    </body>
+            <div class="step">
+              <div class="circle">2</div>
+              <h3>Payments</h3>
+              <p>
+                Lorem ipsum pellentesque malesuada cras at volutpat ridiculus et
+                in.
+              </p>
+              <img
+                src="assets/Arc 4.svg"
+                alt="Curve Arrow"
+                class="curve-arrow arc-4"
+              />
+            </div>
+
+            <div class="step">
+              <div class="circle">3</div>
+              <h3>Shipment and delivery</h3>
+              <p>
+                Lorem ipsum pellentesque malesuada cras at volutpat ridiculus et
+                in.
+              </p>
+              <img
+                src="assets/Arc 2.svg"
+                alt="Curve Arrow"
+                class="curve-arrow arc-2"
+              />
+            </div>
+
+            <div class="step">
+              <div class="circle">4</div>
+              <h3>Get the vehicle safe</h3>
+              <p>
+                Lorem ipsum pellentesque malesuada cras at volutpat ridiculus et
+                in.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="heading-arrive">
+          <h2>Our Customers Feedback</h2>
+          <a href="#" class="view-more">View All Reviews</a>
+        </div>
+        <div class="slider-container">
+          <div class="slides-wrapper" id="slidesWrapper">
+            <div class="slide">
+              <div class="testimonial-content">
+                <div class="star-rating">
+                  <i class="fa-sharp fa-solid fa-star"></i>
+                  <i class="fa-sharp fa-solid fa-star"></i>
+                  <i class="fa-sharp fa-solid fa-star"></i>
+                  <i class="fa-sharp fa-solid fa-star"></i>
+                  <i class="fa-sharp fa-solid fa-star"></i>
+                </div>
+                <h2>I'm grateful</h2>
+                <p class="grate-desc">
+                  "Já recebi o carro e estou muito agradecido. O carro está em
+                  boas condições. Chinai Calisto Basilio Mozambique"
+                </p>
+                <p class="date-on">On 13/05/2025</p>
+              </div>
+              <div class="quote-image-wrapper">
+                <img
+                  src="assets/gratefull.png"
+                  alt="Testimonial Image"
+                  class="quote-image"
+                />
+                <div class="quote-icon">
+                  <img src="assets/quote.svg" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="slide">
+              <div class="testimonial-content">
+                <div class="star-rating">
+                  <i class="fa-sharp fa-solid fa-star"></i>
+                  <i class="fa-sharp fa-solid fa-star"></i>
+                  <i class="fa-sharp fa-solid fa-star"></i>
+                  <i class="fa-sharp fa-solid fa-star"></i>
+                  <i class="fa-sharp fa-solid fa-star"></i>
+                </div>
+                <h2>Excellent Service!</h2>
+                <p class="grate-desc">
+                  "Já recebi o carro e estou muito agradecido. O carro está em
+                  boas condições. Chinai Calisto Basilio Mozambique"
+                </p>
+                <p class="date-on">On 13/05/2025</p>
+              </div>
+              <div class="quote-image-wrapper">
+                <img
+                  src="assets/gratefull.png"
+                  alt="Testimonial Image"
+                  class="quote-image"
+                />
+                <div class="quote-icon">
+                  <img src="assets/quote.svg" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="slide">
+              <div class="testimonial-content">
+                <div class="star-rating">
+                  <i class="fa-sharp fa-solid fa-star"></i>
+                  <i class="fa-sharp fa-solid fa-star"></i>
+                  <i class="fa-sharp fa-solid fa-star"></i>
+                  <i class="fa-sharp fa-solid fa-star"></i>
+                  <i class="fa-sharp fa-solid fa-star"></i>
+                </div>
+                <h2>Highly Recommended!</h2>
+                <p class="grate-desc">
+                  "Já recebi o carro e estou muito agradecido. O carro está em
+                  boas condições. Chinai Calisto Basilio Mozambique"
+                </p>
+                <p class="date-on">On 13/05/2025</p>
+              </div>
+              <div class="quote-image-wrapper">
+                <img
+                  src="assets/gratefull.png"
+                  alt="Testimonial Image"
+                  class="quote-image"
+                />
+                <div class="quote-icon">
+                  <img src="assets/quote.svg" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="dot-ft">
+            <button class="nav-button prev" id="prevButton">
+              <i class="fa-regular fa-angle-left"></i>
+            </button>
+
+            <div class="dot-navigation" id="dotNavigation"></div>
+            <button class="nav-button next" id="nextButton">
+              <i class="fa-regular fa-angle-right"></i>
+            </button>
+          </div>
+        </div>
+        <a href="#" class="view-more view-mbl">View All Reviews</a>
+      </div>
+    </section>
+    <section class="bg-relative2">
+      <div class="bg-shadow2"></div>
+      <div class="container">
+        <div class="heading-arrive">
+          <h2>Latest News</h2>
+          <a href="#" class="view-more">View All News</a>
+        </div>
+        <div class="hero-section">
+          <div class="hero-card large-card">
+            <img
+              src="assets/news-1.png"
+              alt="Meet up with Company lawyer and the team"
+            />
+            <div class="card-overlay">
+              <p class="date">On 13/05/2025</p>
+              <h2>Meet up with Company lawyer and the team</h2>
+              <p class="description">
+                Sakura Motors Tanzania shareholders Mr Naraka de Souza and Mr
+                Niosh Karunapeli, with Sakura Motors Tanzania team meet the
+                Company lawyer Mr Blardes.
+              </p>
+            </div>
+          </div>
+          <div class="side-cards">
+            <div class="hero-card small-card">
+              <img src="assets/news-2.png" alt="Meet up Mr Thomas Sichone" />
+              <div class="card-overlay">
+                <p class="date">On 13/05/2025</p>
+                <h2>Meet up Mr Thomas Sichone</h2>
+              </div>
+            </div>
+            <div class="hero-card small-card">
+              <img src="assets/new-3.png" alt="New Business Engagements!!" />
+              <div class="card-overlay">
+                <p class="date">On 13/05/2025</p>
+                <h2>New Business Engagements!!</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="social-link-main">
+          <a href="#" class="social-link">
+            <img src="assets/facebook.svg" alt="facebook" />
+          </a>
+          <a href="#" class="social-link">
+            <img src="assets/yt.svg" alt="yt" />
+          </a>
+          <a href="#" class="social-link">
+            <img src="assets/insta.svg" alt="insta" />
+          </a>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-section about-us">
+          <div class="about-us-contact">
+            <a href="index.html" class="footer-logo">
+              <img src="assets/logo.svg" alt="Sakura Motors Footer Logo" />
+            </a>
+            <div class="contact-info-footer">
+              <i class="fa-regular fa-phone"></i>
+              <p>+81-29-868-3668</p>
+            </div>
+          </div>
+          <p>
+            We believe in offering you the best customer service possible. We
+            have been in the vehicle trading business for over 15 years in
+            Japan. Our new company, established in 2011, is even better equipped
+            to provide you with your dream vehicle.
+          </p>
+        </div>
+        <div class="footer-right">
+          <div class="footer-section helpful-links">
+            <h3>Helpful Links</h3>
+            <ul>
+              <li><a href="#" class="active-ft">Home</a></li>
+              <li><a href="#">Stock</a></li>
+              <li><a href="#">About Company</a></li>
+              <li><a href="#">News</a></li>
+              <li><a href="#">Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="footer-section contact-details">
+            <h3>Contact</h3>
+            <p><strong>Email:</strong> info@sakuramotors.com</p>
+            <p><strong>Phone Office:</strong><span> +81-29-868-3668</span></p>
+            <p>
+              <strong>Phone Mobile:</strong
+              ><span> +81-90-9945-6908, +81-90-9345-1234</span>
+            </p>
+            <p><strong>Fax:</strong><span> +81-29-868-3669</span></p>
+          </div>
+          <div class="footer-section visit-us">
+            <h3>Visit Us</h3>
+            <p>
+              <strong>Showroom:</strong> Ibaraki Ken, Tsukuba Shi, Gakuen
+              Minami, 3 - 48 - 48, 〒 305 - 0818
+            </p>
+            <p>
+              <strong>Yard:</strong> Ibaraki Ken, Banda shi, Matate, 1086-1, 〒
+              306 - 0605
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>© 2025 All rights reserved</p>
+        <a href="#" class="back-to-top"
+          >Back to the top <i class="fas fa-chevron-up"></i
+        ></a>
+      </div>
+    </footer>
+    <!-- jQuery + Select2 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/header.js"></script>
+  </body>
 </html>
