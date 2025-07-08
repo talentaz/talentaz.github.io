@@ -282,6 +282,7 @@ body {
   width: 75px;
   object-fit: contain;
   margin: 0 16px 0 0;
+  height: 42px;
 }
 
 .search-maker li img {
